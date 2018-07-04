@@ -1,10 +1,14 @@
 import React from 'react';
 import './index.css';
+import { Link } from 'react-router-dom';
 
 const MoviesListItem = ({ movies }) => {
     return (
         <li className="List__item">
-            { movies.show.name }
+            {movies.show.name}
+            <Link to={`/movies/${movies.show.id}`}>
+                <button>About</button>
+            </Link>
         </li>
     )
 }

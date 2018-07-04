@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import Header from '../Header';
-import Movies from '../../containers/Movies';
+import Main from '../Main';
 import 'whatwg-fetch';
 
 class App extends Component {
@@ -9,7 +9,7 @@ class App extends Component {
         return (
             <div className="App">
                 <Header/>
-                <Movies />
+                <Main />
             </div>
         );
     }

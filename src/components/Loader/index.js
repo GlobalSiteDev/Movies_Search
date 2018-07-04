@@ -3,7 +3,7 @@ import loaderSrc from '../../assets/loader.gif';
 
 const Loader = (props) => (
     <div>
-        <img src={ loaderSrc } alt="loader image" />
+        <img src={ loaderSrc } alt="loader" />
     </div>
 );
 
