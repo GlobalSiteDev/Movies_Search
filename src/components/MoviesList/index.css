@@ -1,0 +1,15 @@
+.List {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.List__item {
+    width: 30%;
+    min-height: 100px;
+    background-color: darkgrey;
+    margin: 15px 5px;
+    padding: 10px;
+}

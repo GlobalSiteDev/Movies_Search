@@ -1,12 +1,20 @@
 import React from 'react';
+import './index.css';
 
+const MoviesListItem = ({ movies }) => {
+    return (
+        <li className="List__item">
+            { movies.show.name }
+        </li>
+    )
+}
 
 const MoviesList = (props) => {
     return (
         <div>
-            <ul>
+            <ul className="List">
                 {props.list.map(movies => (
-                    <li>{ movies.show.name }</li>
+                    <MoviesListItem movies={movies} key={ movies.show.id } />
                     )
                 )}
             </ul>
